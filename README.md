@@ -19,7 +19,16 @@ Open `site/index.html` in a browser (no build step required).
 
 There are two ways to publish to `gh-pages`:
 
-1) Manual subtree push (keeps deploy branch independent of `main`)
+1) Deploy script (recommended)
+
+```bash
+# From repo root
+./scripts/deploy.sh               # safe push (no force)
+./scripts/deploy.sh --force       # force push using split branch
+# Options: --remote, --branch, --prefix, --allow-dirty
+```
+
+2) Manual subtree push (keeps deploy branch independent of `main`)
 
 ```bash
 # From repo root
@@ -30,7 +39,7 @@ git push -u origin gh-pages --force
 git branch -D gh-pages
 ```
 
-2) GitHub Actions (manual trigger)
+3) GitHub Actions (manual trigger)
 
 Run the "Deploy to GitHub Pages" workflow from the Actions tab. It publishes `site/` to the `gh-pages` branch using the built-in `GITHUB_TOKEN`.
 
