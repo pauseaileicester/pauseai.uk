@@ -54,16 +54,22 @@ a:hover { color: var(--accent-strong); }
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 .brand-mark {
-  width: 46px;
-  height: 46px;
+  height: 52px;
+  width: auto;
 }
 .brand-text {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
+}
+.brand-uk {
+  font-family: "Montserrat", "Saira Condensed", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 .brand-pretitle {
   font-family: "Montserrat", "Saira Condensed", sans-serif;
