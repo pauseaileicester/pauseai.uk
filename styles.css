@@ -431,7 +431,7 @@ nav a:hover {
   text-decoration: none;
 }
 .footer-links a:hover { color: var(--accent); }
-.footer-brand .brand-mark { width: 40px; height: 40px; }
+.footer-brand .brand-mark { width: 68px; height: auto; }
 
 @media (max-width: 720px) {
   nav { display: none; }
